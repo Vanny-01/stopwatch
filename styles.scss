@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+width: 100vw;
+height: 100vh;
+}
+.stopwatch{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  .watch{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    background: linear-gradient(90deg,white,blue,red,yellow,green,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+}
+
+.laps {
+  overflow-y: scroll; 
+  max-height: 200px;
+}
+
+// mobile only
+//@media only screen and (max-width: 576px) {
+//}
+

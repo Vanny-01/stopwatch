@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+</head>
+<body class="text-bg-dark">
+    <div class="text-center display-1 font-monospace fw-bolder">Stopwatch</div>
+    <div class="stopwatch">
+        <div class="watch">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span>.</span>
+            <span id="milliseconds">00</span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="row w-50 gap-2">
+                <button class="btn btn-primary col font-monospace fw-bolder" id="start">Start</button>
+                <button class="btn btn-danger col font-monospace fw-bolder" id="stop">Stop</button>
+                <button class="btn btn-warning col font-monospace fw-bolder" id="lap">Lap</button>
+                <button class="btn btn-success col font-monospace fw-bolder" id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="laps border-2 border font-monospace mt-4">
+            <div class="m-lg-3">Laps</div>
+            <ul class="laps-list">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
